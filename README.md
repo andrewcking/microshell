@@ -1,0 +1,2 @@
+# microshell
+The basic program operates by passing the inputted string into an array. It will not accept an empty string (array) as an argument. It parses the string by calling parse_cmd. I have a flag set, using an int, to detect if a command should be run in the background called bgflag. It is called by the command line by entering an ampersand as a separate word at the end of a string (eg ‘pwd &’). This causes the program to skip the waitpid call. The system can accept multiple lines of code, which it passes through to the command line via execvp.
